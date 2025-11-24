@@ -1,21 +1,21 @@
-# Archivos compilados
+
 *.class
 bin/
 out/
 *.jar
 
-# IDE
+
 .idea/
 .vscode/
 *.iml
 *.iws
 *.ipr
 
-# Sistema
+
 .DS_Store
 Thumbs.db
 
-# Archivos temporales
+
 *.tmp
 *.log
 

@@ -17,7 +17,7 @@ public class EmpleadoMedio extends Empleado{
         this.bonoMensual = bonoMensual;
     }
 
-    public int getPagoPorHora() {
+    public int getPagoPorHor() {
         return pagoPorHora;
     }
 

@@ -1,7 +1,7 @@
 package TechESFOT;
 
 public abstract  class Empleado {
-   //  De forma general todos los empleados tienen un código, nombre, apellido, cargo y sueldo base
+
     protected String codigo;
     protected String nombre;
     protected String apellido;
