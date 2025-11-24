@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Gestion_Empleados gestionEmpleados = new Gestion_Empleados();
-        System.out.println("=== Bienvenido a Tech ESFOT ===\n");
+        System.out.println("=== Bienvenido a Tech ESFOT Gestion Empleados ===\n");
 
         boolean salir = false;
         while (!salir) {
