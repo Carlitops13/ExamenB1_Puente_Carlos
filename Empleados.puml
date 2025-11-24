@@ -1,0 +1,71 @@
+@startuml
+class TechESFOT.Gestion_Empleados {
+- List<Empleado> empleados
++ void registrarEmpleado(Empleado)
++ void mostrarEmpleados()
++ Empleado obtenerEmpleadoConMayorSalario()
++ double calcularPromedioSalarios()
++ void mostrarEmpleadoConMayorSalario()
++ double salarioPromedioTotal()
+}
+
+
+abstract class TechESFOT.Empleado {
+# String codigo
+# String nombre
+# String apellido
+# String cargo
+# double sueldoBase
++ String getCodigo()
++ void setCodigo(String)
++ String getNombre()
++ void setNombre(String)
++ String getApellido()
++ void setApellido(String)
++ String getCargo()
++ void setCargo(String)
++ double getSueldoBase()
++ void setSueldoBase(double)
++ {abstract}void mostrarInfo()
++ {abstract}double calcularSalario()
+}
+
+
+class TechESFOT.EmpleadoMedio {
+- int pagoPorHora
+- double bonoMensual
++ int getPagoPorHora()
++ void setPagoPorHora(int)
++ double getBonoMensual()
++ void setBonoMensual(double)
++ void mostrarInfo()
++ double calcularSalario()
+}
+
+
+class TechESFOT.Main {
++ {static} void main(String[])
+- {static} void registrarEmpleadoCompleto(Scanner,Gestion_Empleados)
+- {static} void registrarEmpleadoMedio(Scanner,Gestion_Empleados)
+}
+
+class TechESFOT.EmpleadoCompleto {
+- int horasExtra
+- double bonoMensual
++ int getHorasExtra()
++ void setHorasExtra(int)
++ double getBonoMensual()
++ void setBonoMensual(double)
++ void mostrarInfo()
++ double calcularSalario()
+}
+
+
+class TechESFOT.EmpleadosValidacion {
+}
+
+
+TechESFOT.Empleado <|-- TechESFOT.EmpleadoMedio
+TechESFOT.Empleado <|-- TechESFOT.EmpleadoCompleto
+TechESFOT.Exception <|-- TechESFOT.EmpleadosValidacion
+@enduml
