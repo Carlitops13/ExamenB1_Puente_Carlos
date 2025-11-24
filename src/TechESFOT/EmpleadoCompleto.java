@@ -21,7 +21,7 @@ public class EmpleadoCompleto extends Empleado{
     public int getHorasExtra() {
         return horasExtra;
     }
-
+//vvalidacion
     public void setHorasExtra(int horasExtra) throws EmpleadosValidacion {
         if (horasExtra < 0) {
             throw new EmpleadosValidacion("Las horas extras no pueden ser negativas");

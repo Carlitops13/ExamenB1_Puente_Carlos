@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Gestion_Empleados {
-
+// array list
    private List<Empleado> empleados;
 
    public Gestion_Empleados() {
